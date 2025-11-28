@@ -1,0 +1,93 @@
+/* ---------- GENERAL ---------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F7F2; /* Background */
+    font-family: "Arial", sans-serif;
+    color: #333333; /* Text */
+    line-height: 1.7;
+}
+
+/* Titles */
+h1, h2, h4 {
+    font-family: "Georgia", serif;
+    color: #5E8C61; /* Secondary */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+h4 {
+    text-align: center;
+    margin-top: -10px;
+    color: #8CBF75; /* Primary */
+}
+
+/* Paragraphs */
+p {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #8CBF75; /* Primary */
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #E0C097; /* Accent */
+}
+
+/* ---------- LISTS ---------- */
+
+ul {
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ---------- IMAGES ---------- */
+
+img {
+    display: block;
+    margin: 40px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+/* ---------- QUOTE ---------- */
+
+em {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #5E8C61;
+    font-style: italic;
+}
+
