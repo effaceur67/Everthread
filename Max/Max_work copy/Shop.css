@@ -45,3 +45,15 @@ button:hover{background:var(--secondary)}
 
 @media(max-width:900px){.product-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.product-grid{grid-template-columns:1fr}}
+
+footer {
+    text-align: center;
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 15px;
+}

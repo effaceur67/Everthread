@@ -95,3 +95,14 @@ em{
     font-style:italic;
     font-size:1.2rem;
 }
+footer {
+    text-align: center;
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 15px;
+}
