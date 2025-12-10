@@ -99,6 +99,50 @@
     </article>
 
   </div>
+
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+        <script src="calculator.js"></script> 
+    </head>
+        <body>
+            <div class="carbon-calculator">
+                <h2>Carbon Footprint Calculator</h2>
+
+                    <label for="product">Choose a product:</label>
+                        <select id="product">
+                            <option value="Select">Select a Product</option>
+                            <option value="0.9">Organic Tote Bag (0.9 kg CO₂e)</option>
+                            <option value="15">Beige Wide-Leg Pants (15 kg CO₂e)</option>
+                            <option value="10">Soft knit Sweater (10 kg CO₂e)</option>
+                            <option value="15.5">Beige Hoodie (15.5 kg CO₂e)</option>
+                            <option value="2">White Basic T-Shirt (2 kg CO₂e)</option>
+                            <option value="35">Leather Shoes (35 kg CO₂e)</option>
+                            <option value="2.5">Recycled Accessory Pack (2.5 kg CO₂e)</option>
+                            <option value="7">Recycled Denim Jacket (7 kg CO₂e)</option>
+                            <option value="3.1">Simple Dress(Off White) (3.1 kg CO₂e)</option>
+                        </select>
+
+                    <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" min="1" value="1">
+
+                    <label for="country">Your Location:</label>
+                        <select id="country">
+                            <option value="Select">Select your Location</option>
+                            <option value="1000">Europe (1,000 km shipping)</option>
+                            <option value="7200">South America (7,200 km shipping)</option>
+                            <option value="6150">North America (6,150 km shipping)</option>
+                            <option value="16500">Australia (16,500 km shipping)</option>
+                            <option value="6300">Africa (6,300 km shipping)</option>
+                            <option value="9700">Japan (9,700 km shipping)</option>
+                        </select>
+
+                        <button onclick="calculateCarbon()">Calculate</button>
+
+                            <p id="result"></p>
+                                <div id="extra"></div>
+                </div>
+
 </main>
         <footer>
             <p> This page is for educational purposes and aims to raise awareness about the fast fashion industry.</p>

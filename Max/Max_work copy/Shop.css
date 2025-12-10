@@ -17,14 +17,14 @@ header{
 header a{text-decoration:none;color:white;font-weight:700}
 header nav ul{display:flex;gap:22px;list-style:none;padding:0;margin:0}
 
-main{max-width:1200px;margin:40px auto}
+main{max-width:1350px;margin:40px auto}
 
 h1{text-align:center;color:var(--secondary);margin-bottom:10px}
 .intro-text{text-align:center;margin-bottom:40px;color:#666}
 
 .product-grid{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(5,1fr);
   gap:25px;
 }
 
@@ -45,6 +45,84 @@ button:hover{background:var(--secondary)}
 
 @media(max-width:900px){.product-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.product-grid{grid-template-columns:1fr}}
+
+
+
+ .carbon-calculator {
+    max-width: 420px;
+    margin: 30px auto;
+    background: #E0C097;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px  #5E8C61;
+    font-family: 'Nunito Sans', serif;
+}
+
+.carbon-calculator h2 {
+    text-align: center;
+    color: #5E8C61;
+    margin-bottom: 15px;
+    font-family:'Nunito Sans',sans-serif;
+}
+
+.carbon-calculator select {
+    background: white;
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-family:'Nunito Sans',sans-serif
+}
+
+
+.carbon-calculator input {
+    width: 96%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-family:'Nunito Sans',sans-serif
+}
+
+.carbon-calculator button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #5E8C61;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family:'Nunito Sans',sans-serif
+}
+
+.carbon-calculator button:hover {
+    background-color: #3e8e66;
+    font-family:'Nunito Sans',sans-serif
+}
+
+
+#result {
+  background: white;
+  border-left: 4px solid #5E8C61;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family:'Nunito Sans',sans-serif
+}
+
+.equivalents {
+  background: white;
+  border: 1px solid #d1e4d3;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family:'Nunito Sans',sans-serif
+}
 
 footer {
     text-align: center;
