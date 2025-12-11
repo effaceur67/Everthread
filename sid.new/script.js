@@ -1,6 +1,20 @@
-/* =======================
-   FAQ Toggle (Improved)
-======================= */
+document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-menu a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+    });
+/* FAQ toggle */
 
 const faqQuestions = document.querySelectorAll('.faq-question');
 
@@ -9,20 +23,18 @@ faqQuestions.forEach(question => {
 
         const answer = question.nextElementSibling;
 
-        // Close all other answers
+        // close all other answers
         document.querySelectorAll('.faq-answer').forEach(a => {
             if (a !== answer) a.style.display = 'none';
         });
 
-        // Toggle selected answer
+        // toggle selected answer
         answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
     });
 });
 
 
-/* =======================
-   Form Submission Handling
-======================= */
+/* form submission handling */
 document.querySelectorAll('form').forEach(form => {
     form.addEventListener('submit', e => {
         e.preventDefault();
