@@ -38,9 +38,9 @@ header {
 
 /* Grupo izquierdo: Logo + Nombre */
 .brand-group {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: flex;        /* Alignement horizontal côte à côte */
+    align-items: center;  /* Alignement vertical au centre */
+    gap: 8px;             /* ESPACE entre les éléments (Logo et EVERTHREAD) */
 }
 
 /* LOGO CIRCULAR */
