@@ -6,7 +6,24 @@ body {
     padding: 0;
 }
 
-header {
+#header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #5E8C61;
+    color: #F8F7F2;
+}
+
+.logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: #F8F7F2;
+    text-decoration: none;
+}
+
+
+#header2 {
     text-align: center;
     background-image: url("img6.png");
     background-size: 100%;

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>EVERTHREAD — Payment</title>
+<link rel="stylesheet" href="payment.css"> 
+<script defer src="payment.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Secure Payment</h1>
+    <p class="subtitle">Please fill the information.</p>
+
+    <form id="payment-form">
+
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Pastore Javier" required>
+        </div>
+
+        <div class="input-group">
+            <label>Card Number</label>
+            <input type="text" maxlength="16" placeholder="XXXX XXXX XXXX 6969" required>
+        </div>
+
+        <div class="row">
+            <div class="input-group half">
+                <label>Expiration Date</label>
+                <input type="text" maxlength="5" placeholder="MM/YY" required>
+            </div>
+
+            <div class="input-group half">
+                <label>CVV</label>
+                <input type="text" maxlength="3" placeholder="666" required>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Billing Address</label>
+            <input type="text" placeholder="46 Chemin du Grand Violet, 01360 Loyettes, France" required>
+        </div>
+
+        <div class="btn-container">
+            <button type="button" class="back-btn" onclick="location.href='cart.html'">⬅ Back to Cart</button>
+            <button type="submit" class="pay-btn" onclick="location.href='confirmation.html'">Pay Now</button>
+        </div>
+
+    </form>
+
+</div>
+        
+</body>
+</html>

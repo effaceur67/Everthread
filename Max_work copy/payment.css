@@ -1,0 +1,98 @@
+body{
+    background:#F8F7F2;
+    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+    color:#333;
+}
+
+.container{
+    background:white;
+    padding:40px;
+    width:420px;
+    border-radius:12px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+h1{
+    color:#5E8C61;
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+.subtitle{
+    color:#777;
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+.input-group{
+    text-align:left;
+    margin-bottom:18px;
+}
+
+label{
+    font-weight:bold;
+    color:#5E8C61;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:2px solid #8CBF75;
+    font-size:14px;
+    margin-top:5px;
+}
+
+input:focus{
+    border-color:#5E8C61;
+    outline:none;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+}
+
+.half{
+    flex:1;
+}
+
+.btn-container{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+button{
+    padding:10px 18px;
+    border:none;
+    font-size:15px;
+    cursor:pointer;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.back-btn{
+    background:#E0C097;
+    color:white;
+}
+
+.back-btn:hover{
+    background:#d3af87;
+}
+
+.pay-btn{
+    background:#5E8C61;
+    color:white;
+}
+
+.pay-btn:hover{
+    background:#8CBF75;
+}
+

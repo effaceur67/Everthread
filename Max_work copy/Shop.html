@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>EVERTHREAD — Shop</title>
+  <link rel="stylesheet" href="shop.css">
+  <script defer src="cart.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><a href="index.html">EVERTHREAD</a></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="shop.html">Shop</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Our Slow Fashion Collection</h1>
+  <p class="intro-text">Ethically made, long-lasting essentials. Minimalist sustainable fashion.</p>
+
+  <div class="product-grid" id="products">
+
+    <article class="product-card">
+      <img src="Screenshot 2025-11-17 at 13.41.14.png">
+      <h3>Organic Tote Bag</h3>
+      <p class="price">29,99€</p>
+      <button onclick="addToCart('Organic Tote Bag',29.99)">Add to Cart</button>
+
+    </article>
+
+    <article class="product-card">
+      <img src="beige_pants.png">
+      <h3>Beige Wide-Leg Pants</h3>
+      <p class="price">79,99€</p>
+      <button onclick="addToCart('Beige Wide-Leg Pants',79.99)">Add to Cart</button>
+
+    </article>
+
+    <article class="product-card">
+      <img src="Soft_knit_sweater.png">
+      <h3>Soft Knit Sweater</h3>
+      <p class="price">89,99€</p>
+      <button onclick="addToCart('Soft Knit Sweater',89.99)">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="beige_hoodie.png">
+      <h3>Beige Hoodie</h3>
+      <p class="price">64,99€</p>
+      <button onclick="addToCart('Beige Hoodie',64.99)">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="simple_white_shirt.png">
+      <h3>White Basic T-Shirt</h3>
+      <p class="price">24,99€</p>
+      <button onclick="addToCart('White Basic T-Shirt',24.99)">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="leather_shoes.png">
+      <h3>Leather Shoes</h3>
+      <p class="price">109,99€</p>
+      <button onclick="addToCart('Leather shoes',109.99)">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="Wallet.png">
+      <h3>Recycled Accessory Pack</h3>
+      <p class="price">38,99€</p>
+      <button onclick="addToCart('Recycled Accessory Pack',38.99)">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="jacket.png">
+      <h3>Recycled Denim Jacket</h3>
+      <p class="price">119,99€</p>
+      <button onclick="addToCart('Recycled Denim Jacket',119.99)">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="Dress.png">
+      <h3>Simple Dress (Off White)</h3>
+      <p class="price">69,99€</p>
+      <button onclick="addToCart('Simple Dress (Off White)',89.99)">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="repair_kit.png">
+      <h3>Home Repair Kit</h3>
+      <p class="price">19,99€</p>
+      <button onclick="addToCart('Home Repair Kit',19.99)">Add to Cart</button>
+    </article>
+
+  </div>
+
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+        <script src="calculator.js"></script> 
+    </head>
+        <body>
+            <div class="carbon-calculator">
+                <h2>Carbon Footprint Calculator</h2>
+
+                    <label for="product">Choose a product:</label>
+                        <select id="product">
+                            <option value="Select">Select a Product</option>
+                            <option value="0.9">Organic Tote Bag (0.9 kg CO₂e)</option>
+                            <option value="15">Beige Wide-Leg Pants (15 kg CO₂e)</option>
+                            <option value="10">Soft knit Sweater (10 kg CO₂e)</option>
+                            <option value="15.5">Beige Hoodie (15.5 kg CO₂e)</option>
+                            <option value="2">White Basic T-Shirt (2 kg CO₂e)</option>
+                            <option value="35">Leather Shoes (35 kg CO₂e)</option>
+                            <option value="2.5">Recycled Accessory Pack (2.5 kg CO₂e)</option>
+                            <option value="7">Recycled Denim Jacket (7 kg CO₂e)</option>
+                            <option value="3.1">Simple Dress(Off White) (3.1 kg CO₂e)</option>
+                        </select>
+
+                    <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" min="1" value="1">
+
+                    <label for="country">Your Location:</label>
+                        <select id="country">
+                            <option value="Select">Select your Location</option>
+                            <option value="1000">Europe (1,000 km shipping)</option>
+                            <option value="7200">South America (7,200 km shipping)</option>
+                            <option value="6150">North America (6,150 km shipping)</option>
+                            <option value="16500">Australia (16,500 km shipping)</option>
+                            <option value="6300">Africa (6,300 km shipping)</option>
+                            <option value="9700">Japan (9,700 km shipping)</option>
+                        </select>
+
+                        <button onclick="calculateCarbon()">Calculate</button>
+
+                            <p id="result"></p>
+                                <div id="extra"></div>
+                </div>
+
+</main>
+        <footer>
+            <p> This page is for educational purposes and aims to raise awareness about the fast fashion industry.</p>
+        </footer>
+</body>
+</html>
