@@ -23,15 +23,13 @@ body {
     text-decoration: none;
 }
 
-
-
-
 #header2 {
     text-align: center;
     background-image: url("img1.jpg");
     background-size: 50%;
     padding: 40px 20px;
     margin-bottom: 30px;
+    border: 2px solid #ebb570; 
     
 }
 
@@ -61,6 +59,7 @@ header p {
     border-radius: 20px;
     width:50% ;
     height:200px;
+    border: 2px solid #ebb570; 
 }
 
 #img2{
@@ -72,6 +71,7 @@ header p {
     border-radius: 20px;
     width:40% ;
     height:200px;
+    border: 2px solid #ebb570; 
 }
 
 #section2 {
@@ -88,6 +88,7 @@ header p {
     border-radius: 20px; 
     width:50% ;
     height:200px;
+    border: 2px solid #ebb570; 
 }
 
 #img3{
@@ -99,6 +100,7 @@ header p {
     border-radius: 20px;
     width:40% ;
     height:200px;
+    border: 2px solid #ebb570; 
 }
 
 #section3{
@@ -117,6 +119,7 @@ header p {
     border-radius: 20px;
     width:35% ;
     height:350px;
+    border: 2px solid #ebb570; 
 }
 
 #how-it-works{
@@ -125,7 +128,8 @@ header p {
     padding: 25px;
     border-radius: 20px;
     width:60% ;
-    height:350px;
+    height:375px;
+    border: 2px solid #ebb570; 
 }
 
 #img5{
@@ -137,6 +141,7 @@ header p {
     border-radius: 20px;
     width:35% ;
     height:350px;
+    border: 2px solid #ebb570; 
 }
 
 #impacts{
@@ -145,6 +150,7 @@ header p {
     padding: 25px;
     border-radius: 20px;
     width:95%;
+    border: 2px solid #ebb570; 
 }
 
 h2 {
@@ -198,6 +204,7 @@ footer {
     color: #ecf0f1;
     padding: 20px;
     margin-top: 40px;
+    border: 2px solid #ebb570; 
 }
 
 footer p {
