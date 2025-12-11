@@ -1,7 +1,3 @@
-/* hambuger menu */
-
-
-
 /* =======================
    FAQ Toggle (Improved)
 ======================= */
@@ -23,12 +19,23 @@ faqQuestions.forEach(question => {
     });
 });
 
-// Hamburger toggle
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('nav');
 
-if (hamburger) {
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-}
+/* =======================
+   Form Submission Handling
+======================= */
+document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        form.reset();
+
+        const thankYou = form.parentElement.querySelector('.thank-you');
+        if (thankYou) {
+            thankYou.style.display = 'block';
+
+            setTimeout(() => {
+                thankYou.style.display = 'none';
+            }, 3000);
+        }
+    });
+});
