@@ -170,7 +170,7 @@ main h1 {
 
 .brands-grid {
   display: flex;
-  gap: 30px;
+  gap: 80px;
   overflow-x: hidden; 
   overflow-y: hidden;
   scroll-behavior: smooth;
@@ -231,7 +231,7 @@ main h1 {
   padding: 25px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 250px; 
+  min-width: 350px; 
   flex-shrink: 0.1; 
 }
 
@@ -252,8 +252,8 @@ main h1 {
 }
 
 .brand-logo img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 120%;
+  max-height: 100%;
   object-fit: contain;
 }
 

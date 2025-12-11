@@ -6,25 +6,25 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* Styles for the header element with ID header1, setting background, layout, padding, and positioning. */
 #header1 {
     background: #5E8C61;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Separate logo and button */
+    justify-content: space-between; 
     padding: 15px 40px;
     color: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     position: relative;
     z-index: 1001;
 }
-
+/* Styles for the brand-group container, arranging logo elements in a flex layout. */
 .brand-group {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
+/* Styles for the circular logo image, defining size, shape, and border. */
 .circle-logo {
     width: 70px;
     height: 70px;
@@ -32,6 +32,7 @@ body {
     object-fit: cover;
     border: 2px solid #E0C097;
 }
+/* Styles for the logo link, removing underline and setting font properties. */
 
 .logo a {
     text-decoration: none;
@@ -42,7 +43,7 @@ body {
     white-space: nowrap;
 }
 
-/* BOTÓN HAMBURGUESA - AHORA A LA DERECHA */
+/* Styles for the hamburger menu button, making it clickable and arranging the bars. */
 .hamburger {
     cursor: pointer;
     background: none;
@@ -52,7 +53,7 @@ body {
     padding: 10px;
     z-index: 1002;
 }
-
+/* Styles for each bar in the hamburger icon, defining appearance and transitions. */
 .bar {
     width: 30px;
     height: 3px;
@@ -62,7 +63,7 @@ body {
     border-radius: 5px;
 }
 
-/* Animación del botón hamburguesa a X */
+/* Animation styles for the hamburger when active, transforming bars into an X shape. */
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(11px) rotate(45deg);
 }
@@ -75,24 +76,24 @@ body {
     transform: translateY(-11px) rotate(-45deg);
 }
 
-/* MENÚ DE NAVEGACIÓN - OPTIMIZADO PARA MUCHAS PÁGINAS */
+/* Styles for the navigation menu, positioning it off-screen initially with transitions. */
 .nav-menu {
     position: fixed;
     top: 100px;
     left: -100%;
     width: 100%;
-    max-height: calc(100vh - 100px); /* No excede la pantalla */
+    max-height: calc(100vh - 100px); 
     background-color: #5E8C61;
     transition: left 0.4s ease;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
     z-index: 1000;
-    overflow-y: auto; /* Scroll si hay muchas páginas */
+    overflow-y: auto; 
 }
-
+/* Styles to slide the nav menu into view when active. */
 .nav-menu.active {
     left: 0;
 }
-
+/* Styles for the unordered list in the nav menu, removing bullets and setting layout. */
 .nav-menu ul {
     list-style: none;
     display: flex;
@@ -100,27 +101,27 @@ body {
     padding: 10px 0;
     margin: 0;
 }
-
+/* Styles for list items in the nav menu, centering text and adding borders. */
 .nav-menu li {
     text-align: center;
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+/* Removes border from the last list item. */
 .nav-menu li:last-child {
     border-bottom: none;
 }
-
+/* Styles for links in the nav menu, setting color, font, and hover effects. */
 .nav-menu a {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem; /* Reducido para que quepa más */
+    font-size: 1rem; 
     display: block;
-    padding: 12px 20px; /* Padding compacto */
+    padding: 12px 20px; 
     transition: all 0.3s;
 }
-
+/* Hover and active styles for nav links, changing color and background. */
 .nav-menu a:hover,
 .nav-menu a.active {
     color: #E0C097;

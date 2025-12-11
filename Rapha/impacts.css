@@ -10,7 +10,7 @@ body {
     background: #5E8C61;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Separate logo and button */
+    justify-content: space-between; 
     padding: 15px 40px;
     color: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -41,7 +41,6 @@ body {
     white-space: nowrap;
 }
 
-/* BOTÓN HAMBURGUESA - AHORA A LA DERECHA */
 .hamburger {
     cursor: pointer;
     background: none;
@@ -61,7 +60,7 @@ body {
     border-radius: 5px;
 }
 
-/* Animación del botón hamburguesa a X */
+
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(11px) rotate(45deg);
 }
@@ -74,18 +73,18 @@ body {
     transform: translateY(-11px) rotate(-45deg);
 }
 
-/* MENÚ DE NAVEGACIÓN - OPTIMIZADO PARA MUCHAS PÁGINAS */
+
 .nav-menu {
     position: fixed;
     top: 100px;
     left: -100%;
     width: 100%;
-    max-height: calc(100vh - 100px); /* No excede la pantalla */
+    max-height: calc(100vh - 100px);
     background-color: #5E8C61;
     transition: left 0.4s ease;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
     z-index: 1000;
-    overflow-y: auto; /* Scroll si hay muchas páginas */
+    overflow-y: auto; 
 }
 
 .nav-menu.active {
@@ -114,9 +113,9 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem; /* Reducido para que quepa más */
+    font-size: 1rem; 
     display: block;
-    padding: 12px 20px; /* Padding compacto */
+    padding: 12px 20px; 
     transition: all 0.3s;
 }
 
