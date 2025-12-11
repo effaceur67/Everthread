@@ -29,6 +29,7 @@ body {
     background-size: 100%;
     padding: 20px 20px;
     margin-bottom: 30px;
+    border: 2px solid #ebb570; 
 }
 
 
@@ -58,6 +59,7 @@ header p {
     border-radius: 20px;
     width:95% ;
     height:1500px;
+    border: 2px solid #ebb570; 
 }
 
 #section1_1{
@@ -178,6 +180,7 @@ header p {
     align-items: center;
     justify-content: center;
     gap:20px;
+     
 }
 
 #labor{
@@ -187,6 +190,7 @@ header p {
     border-radius: 20px; 
     width:95% ;
     height:350px;
+    border: 2px solid #ebb570;
 }
 
 
@@ -233,6 +237,7 @@ footer {
     color: #ecf0f1;
     padding: 20px;
     margin-top: 40px;
+    border: 2px solid #ebb570;
 }
 
 footer p {
