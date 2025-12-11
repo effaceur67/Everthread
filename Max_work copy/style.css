@@ -1,100 +1,214 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
 
 /* GENERAL */
-
-body{
-    margin:0;
-    background:#F8F7F2;
-    font-family:'Nunito Sans', sans-serif;
-    color:#333;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main{
-    max-width:1100px;
-    margin:40px auto;
-    background:white;
-    padding:40px 60px;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+body {
+    background: #F8F7F2;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
 }
 
-/* HEADER + NAV */
-
-header{
-    background:#5E8C61;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-    color:white;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+main {
+    max-width: 1600px;
+    margin: 40px auto;
+    background: white;
+    padding: 80px 90px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: justify;
 }
 
-header .logo a{
-    text-decoration:none;
-    color:white;
-    font-size:28px;
-    font-weight:700;
+/* HEADER - 3 ELEMENTOS CON BOTÓN A LA DERECHA */
+header {
+    background: #5E8C61;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa logo y botón */
+    padding: 15px 40px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1001;
 }
 
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:25px;
+/* Grupo izquierdo: Logo + Nombre */
+.brand-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
+/* LOGO CIRCULAR */
+.circle-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #E0C097;
 }
 
-nav a:hover,
-nav a.active{
-    color:#E0C097;
-    border-bottom:2px solid #E0C097;
+/* NOMBRE DE LA PÁGINA */
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+/* BOTÓN HAMBURGUESA - AHORA A LA DERECHA */
+.hamburger {
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1002;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Animación del botón hamburguesa a X */
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* MENÚ DE NAVEGACIÓN - OPTIMIZADO PARA MUCHAS PÁGINAS */
+.nav-menu {
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    width: 100%;
+    max-height: calc(100vh - 100px); /* No excede la pantalla */
+    background-color: #5E8C61;
+    transition: left 0.4s ease;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: auto; /* Scroll si hay muchas páginas */
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-menu li:last-child {
+    border-bottom: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem; /* Reducido para que quepa más */
+    display: block;
+    padding: 12px 20px; /* Padding compacto */
+    transition: all 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #E0C097;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* TITLES */
-
-h1,h2,h4{
-    color:#5E8C61;
-    font-weight:700;
-    text-align:center;
+h1, h2, h4 {
+    color: #5E8C61;
+    font-weight: 700;
+    text-align: center;
 }
 
-h1{ font-size:40px; margin-bottom:5px; }
-h4{ font-size:18px; color:#8CBF75; margin-top:-10px; }
+h1 { 
+    font-size: 40px; 
+    margin-bottom: 5px; 
+}
+
+h2 {
+    font-size: 28px;
+    margin: 30px 0 15px;
+}
+
+h4 { 
+    font-size: 18px; 
+    color: #8CBF75; 
+    margin-top: -10px; 
+}
 
 /* TEXT */
+p, ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
 
-p,ul{
-    font-size:1.1rem;
-    max-width:900px;
-    margin:auto;
-    margin-bottom:25px;
+section {
+    margin: 40px 0;
+}
+
+section ul {
+    padding-left: 40px;
+}
+
+section li {
+    margin: 10px 0;
 }
 
 /* IMAGE */
-
-img{
-    width:100%;
-    border-radius:10px;
-    margin-top:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+img:not(.circle-logo) {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 /* QUOTE */
-
-em{
-    display:block;
-    text-align:center;
-    margin:25px 0;
-    color:#5E8C61;
-    font-style:italic;
-    font-size:1.2rem;
+em {
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: #5E8C61;
+    font-style: italic;
+    font-size: 1.2rem;
 }
+
 footer {
     text-align: center;
     background-color: #34495e;
