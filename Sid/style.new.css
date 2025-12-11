@@ -1,0 +1,268 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+/* ================================
+   GLOBAL PAGE STYLE
+==================================*/
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #F8F7F2; /* Light beige */
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ================================
+   HEADER / NAVIGATION
+==================================*/
+
+nav {
+  background-color: #5E8C61; /* Soft green */
+  color: #F8F7F2;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #F8F7F2;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ebb570; /* Light gold */
+  border-bottom: 3px solid #ebb570;
+}
+
+/* ================================
+   CONTENT SECTIONS
+==================================*/
+
+section {
+  max-width: 1600px;
+  margin: 40px auto;
+  background-color: #FFFFFF;
+  padding: 30px 40px;
+  border-radius: 8px;
+  border: 2px solid #E0C097; /* Gold border */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* ================================
+   HEADINGS
+==================================*/
+
+h1, h2 {
+  color: #5E8C61; /* Green heading */
+  text-align: center;
+  border-bottom: 3px solid #ebb570;
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+}
+
+h3 {
+  color: #5E8C61;
+  border-bottom: 2px solid #ebb570;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-top: 25px;
+}
+
+/* ================================
+   FORMS
+==================================*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  font-size: 16px;
+}
+
+button {
+  background-color: #8CBF75; /* Lighter green */
+  color: #333;
+  border: none;
+  padding: 12px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #5E8C61;
+  color: white;
+}
+
+/* Thank-you message */
+.thank-you {
+  display: none;
+  color: #5E8C61;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* ================================
+   FAQ SECTION
+==================================*/
+
+.faq-item {
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.faq-question {
+  font-weight: 700;
+  color: #5E8C61;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 8px;
+  color: #555;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+/* ================================
+   MEETINGS PAGE BACKGROUND
+==================================*/
+
+.meetings-bg {
+  background-image: url("business-team-meeting-boardroom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.meetings-bg section {
+  background-color: rgba(255,255,255,0.95);
+}
+
+/* ==========================
+   NEW FAQ STYLE UPGRADE
+========================== */
+
+/* Center FAQ content */
+.faq-item {
+  max-width: 900px;        /* keeps questions centered */
+  margin: 20px auto;       /* auto centers horizontally */
+  text-align: center;      /* center question text */
+  padding: 15px 0;
+}
+
+/* FAQ question text */
+.faq-question {
+  font-weight: 700;
+  font-size: 22px;
+  color: #5E8C61;
+  cursor: pointer;
+
+  /* subtle transition */
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #8CBF75;
+}
+
+/* Themed answer box */
+.faq-answer {
+  display: none;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #FFFFFF;
+
+  /* match your theme boxes */
+  border: 2px solid #E0C097; 
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+  font-size: 17px;
+  color: #555;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================
+   Footer
+========================== */
+footer {
+    text-align: center;
+    background-color: #34495e; /* Dark blue-grey */
+    color: #ecf0f1;            /* Light text */
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #E0C097; /* Matches theme accent */
+}
+
+footer p {
+    font-size: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HAMBURGER MENU
+==================================*/
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 1000; /* stays above nav */
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #F8F7F2; /* matches nav text color */
+  border-radius: 2px;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #5E8C61; /* same theme */
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
