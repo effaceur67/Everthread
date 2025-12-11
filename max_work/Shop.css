@@ -55,7 +55,8 @@ h1{
 .product-card{
   background:white;
   padding:18px;
-  border-radius:10px;border:2px solid var(--accent);
+  border-radius:10px;
+  border:2px solid var(--accent);
   text-align:center;
   transition:.3s;
   box-shadow:0 4px 15px rgba(0,0,0,.08)
